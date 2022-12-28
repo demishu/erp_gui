@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>419</width>
+    <height>368</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>erp软件 v0.0.1</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="SalesButton">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="text">
+       <string>销售管理</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="StocksButton">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>库存管理（不可用）</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ReplenishmentButton">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>入库管理（不可用）</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="AccountingButton">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>财务管理（不可用）</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ArticlesButton">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>产品管理（不可用）</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ClientsButton">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>客户管理（不可用）</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>419</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_open_file"/>
+    <addaction name="actionopen_folder"/>
+    <addaction name="actionsave_file"/>
+    <addaction name="separator"/>
+    <addaction name="actioninput_to_database"/>
+    <addaction name="actionchange_user_database"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_open_file">
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="actionopen_folder">
+   <property name="text">
+    <string>打开文件夹</string>
+   </property>
+  </action>
+  <action name="actionsave_file">
+   <property name="text">
+    <string>保存文件</string>
+   </property>
+  </action>
+  <action name="actioninput_to_database">
+   <property name="text">
+    <string>写入数据库</string>
+   </property>
+  </action>
+  <action name="actionchange_user_database">
+   <property name="text">
+    <string>更改数据库用户</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>ClientsButton</tabstop>
+  <tabstop>ReplenishmentButton</tabstop>
+  <tabstop>AccountingButton</tabstop>
+  <tabstop>ArticlesButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
