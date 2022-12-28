@@ -56,7 +56,7 @@ class MainGUI(PartMetaClass):  # todo多线程优化
             self.form.ClientsButton: ClientsPart
         }
         # obj_list存放窗口, 给每个part分别创建一个list，每创建一个part的窗口就塞进相对应的list里。
-        self.obj_list = [[] for part in self.button_class_dict]
+        self.obj_list = [[] for class_ in self.button_class_dict]
         for i, Button in enumerate(self.button_class_dict.keys()):
             # 关联GUI按钮和open_GUI方法
             Button.clicked.connect(partial(self.open_GUI, Button, i))
